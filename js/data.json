@@ -264,14 +264,14 @@
   ],
   "at": [
     {
-      "name": "alte Militärbase",
+      "name": "Alte Militärbase",
       "position": {
         "x": 940,
         "y": 3480
       }
     },
     {
-      "name": "neue Militärbase",
+      "name": "Neue Militärbase",
       "position": {
         "x": 1280,
         "y": 3350
@@ -287,14 +287,14 @@
   ],
   "dt": [
     {
-      "name": "Abgabepunkt",
+      "name": "Erster Abgabepunkt",
       "position": {
         "x": 2900,
         "y": 4000
       }
     },
     {
-      "name": "Abgabepunkt",
+      "name": "Zweiter Abgabepunkt",
       "position": {
         "x": 2700,
         "y": 4500
