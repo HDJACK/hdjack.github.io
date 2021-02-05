@@ -1,0 +1,297 @@
+{
+  "gangs": [
+    {
+      "name": "Yakuza Mafia",
+      "position": {
+        "x": 1530,
+        "y": 5440
+      },
+      "blip_color": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "description": {
+        "skin": "https://imgur.com/j9NxDN8.png",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Weiß"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Die Mambas",
+      "position": {
+        "x": 1250,
+        "y": 4050
+      },
+      "blip_color": {
+        "r": 80,
+        "g": 90,
+        "b": 95
+      },
+      "description": {
+        "skin": "https://i.imgur.com/KoDqKCd.png",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Grau"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Marabunta Grande",
+      "position": {
+        "x": 3130,
+        "y": 3510
+      },
+      "blip_color": {
+        "r": 0,
+        "g": 0,
+        "b": 255
+      },
+      "description": {
+        "skin": "https://i.imgur.com/L14WR0T.png",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Dunkel Blau"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tijan Cartell",
+      "position": {
+        "x": 1300,
+        "y": 5150
+      },
+      "blip_color": {
+        "r": 100,
+        "g": 184,
+        "b": 230
+      },
+      "description": {
+        "skin": "https://s12.directupload.net/images/210122/qj7g9as6.png",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Türkis"
+          }
+        ]
+      }
+    },
+    {
+      "name": "San Fierro Rifa",
+      "position": {
+        "x": 3100,
+        "y": 4000
+      },
+      "blip_color": {
+        "r": 255,
+        "g": 0,
+        "b": 0
+      },
+      "description": {
+        "skin": "https://i.imgur.com/BG39n8a.png",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Rot"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fusion VT",
+      "position": {
+        "x": 3530,
+        "y": 4000
+      },
+      "blip_color": {
+        "r": 35,
+        "g": 40,
+        "b": 43
+      },
+      "description": {
+        "skin": "https://i.gyazo.com/26c2e6618580e3e886dfb2b5b9f87830.jpg",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Schwarz"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Suicidal Tendencies",
+      "position": {
+        "x": 4000,
+        "y": 1750
+      },
+      "blip_color": {
+        "r": 245,
+        "g": 245,
+        "b": 0
+      },
+      "description": {
+        "skin": "https://i.imgur.com/AHd1bsy.jpg",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Gelb"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Grove Street",
+      "position": {
+        "x": 4700,
+        "y": 2000
+      },
+      "blip_color": {
+        "r": 1,
+        "g": 66,
+        "b": 0
+      },
+      "description": {
+        "skin": "https://i.imgur.com/o5qHk2M.png",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Grün"
+          }
+        ]
+      }
+    }
+  ],
+  "wt": [
+    {
+      "name": "Mount Chiliad",
+      "position": {
+        "x": 2850,
+        "y": 2550
+      }
+    },
+    {
+      "name": "Grapeseed",
+      "position": {
+        "x": 3850,
+        "y": 2380
+      }
+    },
+    {
+      "name": "Grapeseed",
+      "position": {
+        "x": 4050,
+        "y": 2250
+      }
+    },
+    {
+      "name": "Grapeseed",
+      "position": {
+        "x": 4150,
+        "y": 2450
+      }
+    },
+    {
+      "name": "Grand Senora Desert",
+      "position": {
+        "x": 3350,
+        "y": 3000
+      }
+    },
+    {
+      "name": "Grand Senora Desert",
+      "position": {
+        "x": 3020,
+        "y": 3750
+      }
+    },
+    {
+      "name": "Richard Majestics",
+      "position": {
+        "x": 1720,
+        "y": 5650
+      }
+    },
+    {
+      "name": "Murrieta Heights",
+      "position": {
+        "x": 3300,
+        "y": 6250
+      }
+    },
+    {
+      "name": "El Burro Heights",
+      "position": {
+        "x": 3650,
+        "y": 6350
+      }
+    },
+    {
+      "name": "Los Santos International Airport",
+      "position": {
+        "x": 2250,
+        "y": 7150
+      }
+    },
+    {
+      "name": "Elysian Island",
+      "position": {
+        "x": 2400,
+        "y": 7150
+      }
+    },
+    {
+      "name": "Elysian Island",
+      "position": {
+        "x": 2600,
+        "y": 7350
+      }
+    },
+    {
+      "name": "Sandy Shores",
+      "position": {
+        "x": 4150,
+        "y": 2900
+      }
+    }
+  ],
+  "at": [
+    {
+      "name": "alte Militärbase",
+      "position": {
+        "x": 940,
+        "y": 3480
+      }
+    },
+    {
+      "name": "neue Militärbase",
+      "position": {
+        "x": 1280,
+        "y": 3350
+      }
+    },
+    {
+      "name": "Humane Labs",
+      "position": {
+        "x": 4880,
+        "y": 2980
+      }
+    }
+  ],
+  "dt": [
+    {
+      "name": "Abgabepunkt",
+      "position": {
+        "x": 2900,
+        "y": 4000
+      }
+    }
+  ]
+}
