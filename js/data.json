@@ -291,13 +291,13 @@
       "position": {
         "x": 2900,
         "y": 4000
-      },
-      {
+      }
+    },
+    {
       "name": "Abgabepunkt",
       "position": {
         "x": 2700,
         "y": 4500
       }
-    }
   ]
 }
