@@ -4,7 +4,7 @@
       "name": "MS13", 
       "position": {
         "x": 1380,
-        "y": 5320
+        "y": 5300
       },
       "blip_color": {
         "r": 255,
@@ -171,8 +171,8 @@
     {
       "name": "Helm GmbH",
       "position": {
-        "x": 2600,
-        "y": 6850
+        "x": 2680,
+        "y": 6810
       },
       "blip_color": {
         "r": 0,
@@ -295,7 +295,7 @@
       "name": "Militärbase",
       "position": {
         "x": 1320,
-        "y": 3425
+        "y": 3440
       }
     },
     {
