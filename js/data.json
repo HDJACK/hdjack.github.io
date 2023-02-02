@@ -3,8 +3,8 @@
     {
       "name": "MS13", 
       "position": {
-        "x": 1350,
-        "y": 5350
+        "x": 1380,
+        "y": 5320
       },
       "blip_color": {
         "r": 255,
@@ -33,7 +33,7 @@
         "b": 1
       },
       "description": {
-        "skin": "",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
@@ -54,7 +54,7 @@
         "b": 1
       },
       "description": {
-        "skin": "",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
@@ -64,7 +64,7 @@
       }
     },
     {
-      "name": "Alte Triaden base",
+      "name": "Alte Triaden Base",
       "position": {
         "x": 1300,
         "y": 5150
@@ -75,7 +75,7 @@
         "b": 1
       },
       "description": {
-        "skin": "",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
@@ -96,7 +96,7 @@
         "b": 1
       },
       "description": {
-        "skin": "",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
@@ -130,7 +130,7 @@
       "name": "Klebrige Banditen",
       "position": {
         "x": 3300,
-        "y": 6000
+        "y": 5600
       },
       "blip_color": {
         "r": 255,
@@ -159,7 +159,7 @@
         "b": 1
       },
       "description": {
-        "skin": "",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
@@ -171,8 +171,8 @@
     {
       "name": "Helm GmbH",
       "position": {
-        "x": 2900,
-        "y": 6550
+        "x": 2600,
+        "y": 6850
       },
       "blip_color": {
         "r": 0,
@@ -201,7 +201,7 @@
         "b": 1
       },
       "description": {
-        "skin": "",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
@@ -294,8 +294,8 @@
     {
       "name": "Militärbase",
       "position": {
-        "x": 1290,
-        "y": 3365
+        "x": 1320,
+        "y": 3425
       }
     },
     {
