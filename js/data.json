@@ -251,6 +251,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "Prinzip",
+      "position": {
+        "x": 3000,
+        "y": 3730
+      },
+      "blip_color": {
+        "r": 16,
+        "g": 78,
+        "b": 139
+      },
+      "description": {
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Blau"
+          }
+        ]
+      }
     }
   ],
   "wt": [
