@@ -220,13 +220,6 @@
       }
     },
     {
-      "name": "Grapeseed (Flugfeld)",
-      "position": {
-        "x": 3850,
-        "y": 2380
-      }
-    },
-    {
       "name": "Grapeseed (Scheune)",
       "position": {
         "x": 4050,
@@ -262,6 +255,41 @@
       }
     },
     {
+      "name": "Observatorium",
+      "position": {
+        "x": 2430,
+        "y": 4550
+      }
+    },
+    {
+      "name": "Vinewood",
+      "position": {
+        "x": 2640,
+        "y": 5500
+      }
+    },
+    {
+      "name": "Dino",
+      "position": {
+        "x": 4190,
+        "y": 3680
+      }
+    },
+    {
+      "name": "Linker Highway",
+      "position": {
+        "x": 1500,
+        "y": 5550
+      }
+    },
+    {
+      "name": "Vespucci",
+      "position": {
+        "x": 1620,
+        "y": 6250
+      }
+    },
+    {
       "name": "Murrieta Heights (SARU)",
       "position": {
         "x": 3300,
@@ -280,6 +308,13 @@
       "position": {
         "x": 1460,
         "y": 3365
+      }
+    },
+    {
+      "name": "Unter Militärbase",
+      "position": {
+        "x": 1220,
+        "y": 3670
       }
     },
     {
