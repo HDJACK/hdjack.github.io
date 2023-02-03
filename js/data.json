@@ -306,15 +306,15 @@
     {
       "name": "Militärbase",
       "position": {
-        "x": 1460,
+        "x": 1480,
         "y": 3365
       }
     },
     {
       "name": "Unter Militärbase",
       "position": {
-        "x": 1480,
-        "y": 3385
+        "x": 1165,
+        "y": 3685
       }
     },
     {
