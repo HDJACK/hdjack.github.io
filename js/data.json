@@ -22,22 +22,22 @@
       }
     },
     {
-      "name": "Alte Marlowe Base",
+      "name": "Kegelclub (Alt Marlowe)",
       "position": {
         "x": 1250,
         "y": 4050
       },
       "blip_color": {
-        "r": 157,
-        "g": 145,
-        "b": 1
+        "r": 16,
+        "g": 78,
+        "b": 139
       },
       "description": {
-        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
+        "skin": "https://cdn.discordapp.com/attachments/1007769883729203292/1070989344590016544/Desktop_Screenshot_2023.02.03_-_09.48.29.99_2.png",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Platzhalter"
+            "content": "Blau"
           }
         ]
       }
