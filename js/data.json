@@ -66,8 +66,8 @@
     {
       "name": "Alte Triaden Base",
       "position": {
-        "x": 1550,
-        "y": 4850
+        "x": 1300,
+        "y": 5150
       },
       "blip_color": {
         "r": 157,
@@ -129,7 +129,7 @@
     {
       "name": "Klebrige Banditen",
       "position": {
-        "x": 3430,
+        "x": 3200,
         "y": 5400
       },
       "blip_color": {
