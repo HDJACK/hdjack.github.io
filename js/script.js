@@ -68,7 +68,7 @@ async function loadHtml() {
     let description = "";
     blip += `<div class="item-point square" data-top="${squad.position.y}" data-left="${squad.position.x}" style="background: rgb(${squad.blip_color.r},${squad.blip_color.g},${squad.blip_color.b})" data-popover="#squad-${counter}">`;
         blip += `<div>`;
-            blip += `<a href="#" class="toggle" style="width: 20px; height: 20px;"></a>`;
+            blip += `<a href="#" class="toggle" style="width: 10px; height: 10px;"></a>`;
         blip += `</div>`;
     blip += `</div>`;
 

@@ -215,34 +215,34 @@
 }
 
 .scalize .item-point.square {
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     font-weight: 700;
     line-height: 27px;
     color: #1d1d1d;
-    background: #a7ffeb;
-    border: 2px solid #00bfa5;
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
+    background: #1d1d1d;
+    border: 2px solid rgb(0, 0, 0);
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
     text-align: center
 }
 
 .scalize .item-point.square.active, .scalize .item-point.square.disabled {
     color: #fff;
-    background: #00bfa5
+    background: #1d1d1d
 }
 
 .scalize .item-point.square > div .toggle {
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
     top: -2px;
     left: -2px
 }
