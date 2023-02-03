@@ -257,35 +257,35 @@
     {
       "name": "Observatorium",
       "position": {
-        "x": 2430,
-        "y": 4550
+        "x": 2230,
+        "y": 4650
       }
     },
     {
       "name": "Vinewood",
       "position": {
-        "x": 2640,
-        "y": 5500
+        "x": 2522,
+        "y": 5450
       }
     },
     {
       "name": "Dino",
       "position": {
-        "x": 4190,
+        "x": 4225,
         "y": 3680
       }
     },
     {
-      "name": "Linker Highway",
+      "name": "Del Perro (Linker Highway)",
       "position": {
-        "x": 1500,
-        "y": 5550
+        "x": 1300,
+        "y": 5635
       }
     },
     {
       "name": "Vespucci",
       "position": {
-        "x": 1620,
+        "x": 1660,
         "y": 6250
       }
     },
@@ -313,8 +313,8 @@
     {
       "name": "Unter Militärbase",
       "position": {
-        "x": 1220,
-        "y": 3670
+        "x": 1480,
+        "y": 3385
       }
     },
     {
@@ -345,15 +345,15 @@
     {
       "name": "Erster Abgabepunkt",
       "position": {
-        "x": 2900,
-        "y": 4000
+        "x": 3140,
+        "y": 4200
       }
     },
     {
       "name": "Zweiter Abgabepunkt",
       "position": {
-        "x": 2700,
-        "y": 4500
+        "x": 2600,
+        "y": 3900
       }
     }
   ]
