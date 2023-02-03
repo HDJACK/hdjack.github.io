@@ -215,8 +215,8 @@
     {
       "name": "Die Heiligen",
       "position": {
-        "x": 3930,
-        "y": 3930
+        "x": 3905,
+        "y": 3910
       },
       "blip_color": {
         "r": 122,
@@ -235,7 +235,7 @@
     {
       "name": "The Lost MC",
       "position": {
-        "x": 3530,
+        "x": 3520,
         "y": 6400
       },
       "blip_color": {
@@ -255,8 +255,8 @@
     {
       "name": "Prinzip",
       "position": {
-        "x": 2870,
-        "y": 3730
+        "x": 2865,
+        "y": 3720
       },
       "blip_color": {
         "r": 16,
