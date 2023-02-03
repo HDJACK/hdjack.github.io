@@ -211,6 +211,48 @@
       }
     }
   ],
+  "squads": [
+    {
+      "name": "Die Heiligen",
+      "position": {
+        "x": 3930,
+        "y": 3930
+      },
+      "blip_color": {
+        "r": 122,
+        "g": 55,
+        "b": 139
+      },
+      "description": {
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Lila"
+          }
+        ]
+      }
+    },
+    {
+      "name": "The Lost MC",
+      "position": {
+        "x": 3540,
+        "y": 6400
+      },
+      "blip_color": {
+        "r": 139,
+        "g": 90,
+        "b": 43
+      },
+      "description": {
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Braun"
+          }
+        ]
+      }
+    }
+  ],
   "wt": [
     {
       "name": "Mount Chiliad (Lenny)",

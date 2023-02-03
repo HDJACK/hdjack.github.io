@@ -63,6 +63,33 @@ async function loadHtml() {
 
        counter++;
    });
+   data.squads.forEach((squad) => {
+    let blip = "";
+    let description = "";
+    blip += `<div class="item-point circle" data-top="${squad.position.y}" data-left="${squad.position.x}" style="background: rgb(${squad.blip_color.r},${squad.blip_color.g},${squad.blip_color.b})" data-popover="#squad-${counter}">`;
+        blip += `<div>`;
+            blip += `<a href="#" class="toggle" style="width: 10px; height: 10px;"></a>`;
+        blip += `</div>`;
+    blip += `</div>`;
+
+    description += `<div id="squad-${counter}" class="content right bottom">`;
+        description += `<div class="head">`;
+            description += `<a href="#" class="exit"><img src="assets/close.png" alt="" style="color:"#000" /></a>`;
+            description += `<h6 class="title">${squad.name}</h6>`;
+        description += `</div>`;
+        description += `<div class="body">`;
+            description += `<p>`;
+            squad.description.texts.forEach(text => {
+                description += `<b>${text.title}:</b> ${text.content}<br>`;
+            });
+            description += `</p>`;
+        description += `</div>`;
+    description += `</div>`;
+
+    html += blip + description;
+
+    counter++;
+});
     data.wt.forEach((item) => {
         const { position, name } = item;
         let blip = "";
