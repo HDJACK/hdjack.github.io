@@ -66,8 +66,8 @@
     {
       "name": "Alte Triaden Base",
       "position": {
-        "x": 1300,
-        "y": 5150
+        "x": 1550,
+        "y": 4850
       },
       "blip_color": {
         "r": 157,
@@ -172,7 +172,7 @@
       "name": "Helm GmbH",
       "position": {
         "x": 2680,
-        "y": 6780
+        "y": 6770
       },
       "blip_color": {
         "r": 0,
@@ -294,7 +294,7 @@
     {
       "name": "Militärbase",
       "position": {
-        "x": 1290,
+        "x": 1320,
         "y": 3470
       }
     },
