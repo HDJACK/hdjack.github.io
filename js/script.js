@@ -51,12 +51,7 @@ dtBtn.addEventListener("click", function () {
 
 
 $(document).ready(() => {
-    gangsBtn.addEventListener("click", function () {
-        gangsVisible = !gangsVisible;
-        gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
-        gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
-        loadHtml();
-    });
+    loadHtml();
 
     $("img").click(function (e) {
         let x = e.pageX - e.target.offsetLeft;
