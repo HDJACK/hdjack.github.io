@@ -86,10 +86,6 @@ async function loadHtml() {
         gangsVisible = !gangsVisible;
         gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
         gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
-        if (!gangsVisible) {
-            html = " ";
-            counter--;
-        }
     });
     squadBtn.addEventListener("click", function () {
         data.squads.forEach((squad) => {
@@ -128,10 +124,6 @@ async function loadHtml() {
         squadVisible = !squadVisible;
         squadBtn.style.backgroundColor = squadVisible ? "green" : "red";
         squadBtn.innerHTML = `Squad: ${squadVisible ? "An" : "Aus"}`;
-        if (!squadVisible) {
-            html = " ";
-            counter--;
-        }
     });
     wtBtn.addEventListener("click", function () {
         data.wt.forEach((item) => {
@@ -164,10 +156,6 @@ async function loadHtml() {
         wtVisible = !wtVisible;
         wtBtn.style.backgroundColor = wtVisible ? "green" : "red";
         wtBtn.innerHTML = `WT: ${wtVisible ? "An" : "Aus"}`;
-        if (!wtVisible) {
-            html = " ";
-            counter--;
-        }
     });
     atBtn.addEventListener("click", function () {
         data.at.forEach((item) => {
@@ -200,10 +188,6 @@ async function loadHtml() {
         atVisible = !atVisible;
         atBtn.style.backgroundColor = atVisible ? "green" : "red";
         atBtn.innerHTML = `AT: ${atVisible ? "An" : "Aus"}`;
-        if (!atVisible) {
-            html = " ";
-            counter--;
-        }
     });
     dtBtn.addEventListener("click", function () {
         data.dt.forEach((item) => {
