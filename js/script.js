@@ -74,12 +74,13 @@ function getData() {
 }
 
 
-let counter = 0;
-let html = "";
-const data = await getData();
+
 
 // load Data into View
 async function loadHtmlGangs() {
+    let counter = 0;
+    let html = "";
+    const data = await getData();
     if ($('#gangsBtn').prop('checked')) {
         data.gangs.forEach((gang) => {
             let blip = "";
@@ -117,6 +118,9 @@ async function loadHtmlGangs() {
 }
 
 async function loadHtmlSquads() {
+    let counter = 0;
+    let html = "";
+    const data = await getData();
     if ($('#squadBtn').prop('checked')) {
         data.squads.forEach((squad) => {
             let blip = "";
@@ -151,7 +155,11 @@ async function loadHtmlSquads() {
         $('#content').empty();
     }
 }
+
 async function loadHtmlWT() {
+    let counter = 0;
+    let html = "";
+    const data = await getData();
     if ($('#wtBtn').prop('checked')) {
         data.wt.forEach((item) => {
             const { position, name } = item;
@@ -183,6 +191,9 @@ async function loadHtmlWT() {
 }
 
 async function loadHtmlAT() {
+    let counter = 0;
+    let html = "";
+    const data = await getData();
     if ($('#atBtn').prop('checked')) {
         data.at.forEach((item) => {
             const { position, name } = item;
@@ -213,6 +224,9 @@ async function loadHtmlAT() {
 }
 
 async function loadHtmlDT() {
+    let counter = 0;
+    let html = "";
+    const data = await getData();
     if ($('#dtBtn').prop('checked')) {
         data.dt.forEach((item) => {
             const { position, name } = item;
