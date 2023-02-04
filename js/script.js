@@ -48,6 +48,9 @@ async function loadHtml() {
     let html = "";
     const data = await getData();
     gangsBtn.addEventListener("click", function () {
+        gangsVisible = !gangsVisible;
+        gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
+        gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
         data.gangs.forEach((gang) => {
             if (gangsVisible) {
                 let blip = "";
@@ -76,19 +79,14 @@ async function loadHtml() {
                 html += blip + description;
 
                 counter++;
-
-            } else {
-                blip = " ";
-                description = " ";
-                html += blip + description;
             }
         });
-        gangsVisible = !gangsVisible;
-        gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
-        gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
     });
     squadBtn.addEventListener("click", function () {
         data.squads.forEach((squad) => {
+            squadVisible = !squadVisible;
+            squadBtn.style.backgroundColor = squadVisible ? "green" : "red";
+            squadBtn.innerHTML = `Squad: ${squadVisible ? "An" : "Aus"}`;
             if (squadVisible) {
                 let blip = "";
                 let description = "";
@@ -121,11 +119,11 @@ async function loadHtml() {
                 html += blip + description;
             }
         });
-        squadVisible = !squadVisible;
-        squadBtn.style.backgroundColor = squadVisible ? "green" : "red";
-        squadBtn.innerHTML = `Squad: ${squadVisible ? "An" : "Aus"}`;
     });
     wtBtn.addEventListener("click", function () {
+        wtVisible = !wtVisible;
+        wtBtn.style.backgroundColor = wtVisible ? "green" : "red";
+        wtBtn.innerHTML = `WT: ${wtVisible ? "An" : "Aus"}`;
         data.wt.forEach((item) => {
             if (wtVisible) {
                 const { position, name } = item;
@@ -153,11 +151,11 @@ async function loadHtml() {
                 html += blip + description;
             }
         });
-        wtVisible = !wtVisible;
-        wtBtn.style.backgroundColor = wtVisible ? "green" : "red";
-        wtBtn.innerHTML = `WT: ${wtVisible ? "An" : "Aus"}`;
     });
     atBtn.addEventListener("click", function () {
+        atVisible = !atVisible;
+        atBtn.style.backgroundColor = atVisible ? "green" : "red";
+        atBtn.innerHTML = `AT: ${atVisible ? "An" : "Aus"}`;
         data.at.forEach((item) => {
             if (atVisible) {
                 const { position, name } = item;
@@ -185,11 +183,11 @@ async function loadHtml() {
                 html += blip + description;
             }
         });
-        atVisible = !atVisible;
-        atBtn.style.backgroundColor = atVisible ? "green" : "red";
-        atBtn.innerHTML = `AT: ${atVisible ? "An" : "Aus"}`;
     });
     dtBtn.addEventListener("click", function () {
+        dtVisible = !dtVisible;
+        dtBtn.style.backgroundColor = dtVisible ? "green" : "red";
+        dtBtn.innerHTML = `DT: ${dtVisible ? "An" : "Aus"}`;
         data.dt.forEach((item) => {
             if (dtVisible) {
                 const { position, name } = item;
@@ -217,9 +215,6 @@ async function loadHtml() {
                 html += blip + description;
             }
         });
-        dtVisible = !dtVisible;
-        dtBtn.style.backgroundColor = dtVisible ? "green" : "red";
-        dtBtn.innerHTML = `DT: ${dtVisible ? "An" : "Aus"}`;
     });
 
     $('#content').html($('#content').html() + html);
