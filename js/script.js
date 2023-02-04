@@ -55,7 +55,11 @@ $(document).ready(() => {
         gangsVisible = !gangsVisible;
         gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
         gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
-        loadHtml();
+        if(gangsVisible) {
+            loadHtml();
+        }else{
+            return;
+        }
     });
 
     $("img").click(function (e) {
