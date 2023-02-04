@@ -51,7 +51,11 @@ dtBtn.addEventListener("click", function () {
 
 
 $(document).ready(() => {
-    loadHtml();
+    loadHtmlAT();
+    loadHtmlDT();
+    loadHtmlGangs();
+    loadHtmlSquads();
+    loadHtmlWT();
 
     $("img").click(function (e) {
         let x = e.pageX - e.target.offsetLeft;
@@ -70,11 +74,12 @@ function getData() {
 }
 
 
+let counter = 0;
+let html = "";
+const data = await getData();
+
 // load Data into View
-async function loadHtml() {
-    let counter = 0;
-    let html = "";
-    const data = await getData();
+async function loadHtmlGangs() {
     if ($('#gangsBtn').prop('checked')) {
         data.gangs.forEach((gang) => {
             let blip = "";
@@ -109,6 +114,9 @@ async function loadHtml() {
     } else {
         $('#content').empty();
     }
+}
+
+async function loadHtmlSquads() {
     if ($('#squadBtn').prop('checked')) {
         data.squads.forEach((squad) => {
             let blip = "";
@@ -142,6 +150,8 @@ async function loadHtml() {
     } else {
         $('#content').empty();
     }
+}
+async function loadHtmlWT() {
     if ($('#wtBtn').prop('checked')) {
         data.wt.forEach((item) => {
             const { position, name } = item;
@@ -170,6 +180,9 @@ async function loadHtml() {
     } else {
         $('#content').empty();
     }
+}
+
+async function loadHtmlAT() {
     if ($('#atBtn').prop('checked')) {
         data.at.forEach((item) => {
             const { position, name } = item;
@@ -197,6 +210,9 @@ async function loadHtml() {
     } else {
         $('#content').empty();
     }
+}
+
+async function loadHtmlDT() {
     if ($('#dtBtn').prop('checked')) {
         data.dt.forEach((item) => {
             const { position, name } = item;
