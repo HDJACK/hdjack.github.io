@@ -35,41 +35,11 @@ const wtBtn = document.getElementById("wtBtn");
 const atBtn = document.getElementById("atBtn");
 const dtBtn = document.getElementById("dtBtn");
 
-let gangsVisible = true;
-let squadVisible = true;
-let wtVisible = true;
-let atVisible = true;
-let dtVisible = true;
-
-gangsBtn.addEventListener("click", function () {
-    gangsVisible = !gangsVisible;
-    gangsBtn.style.backgroundColor = gangsVisible ? "red" : "green";
-    gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
-});
-
-squadBtn.addEventListener("click", function () {
-    squadVisible = !squadVisible;
-    squadBtn.style.backgroundColor = squadVisible ? "red" : "green";
-    squadBtn.innerHTML = `Squad: ${squadVisible ? "An" : "Aus"}`;
-});
-
-wtBtn.addEventListener("click", function () {
-    wtVisible = !wtVisible;
-    wtBtn.style.backgroundColor = wtVisible ? "red" : "green";
-    wtBtn.innerHTML = `WT: ${wtVisible ? "An" : "Aus"}`;
-});
-
-atBtn.addEventListener("click", function () {
-    atVisible = !atVisible;
-    atBtn.style.backgroundColor = atVisible ? "red" : "green";
-    atBtn.innerHTML = `AT: ${atVisible ? "An" : "Aus"}`;
-});
-
-dtBtn.addEventListener("click", function () {
-    dtVisible = !dtVisible;
-    dtBtn.style.backgroundColor = dtVisible ? "red" : "green";
-    dtBtn.innerHTML = `DT: ${dtVisible ? "An" : "Aus"}`;
-});
+let gangsVisible = false;
+let squadVisible = false;
+let wtVisible = false;
+let atVisible = false;
+let dtVisible = false;
 
 
 // load Data into View
@@ -77,7 +47,7 @@ async function loadHtml() {
     let counter = 0;
     let html = "";
     const data = await getData();
-    if (gangsVisible) {
+    gangsBtn.addEventListener("click", function () {
         data.gangs.forEach((gang) => {
             let blip = "";
             let description = "";
@@ -106,8 +76,11 @@ async function loadHtml() {
 
             counter++;
         });
-    }
-    if (squadVisible) {
+        gangsVisible = !gangsVisible;
+        gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
+        gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
+    });
+    squadBtn.addEventListener("click", function () {
         data.squads.forEach((squad) => {
             let blip = "";
             let description = "";
@@ -135,8 +108,11 @@ async function loadHtml() {
 
             counter++;
         });
-    }
-    if (wtVisible) {
+        squadVisible = !squadVisible;
+        squadBtn.style.backgroundColor = squadVisible ? "green" : "red";
+        squadBtn.innerHTML = `Squad: ${squadVisible ? "An" : "Aus"}`;
+    });
+    wtBtn.addEventListener("click", function () {
         data.wt.forEach((item) => {
             const { position, name } = item;
             let blip = "";
@@ -158,8 +134,11 @@ async function loadHtml() {
 
             counter++;
         });
-    }
-    if (atVisible) {
+        wtVisible = !wtVisible;
+        wtBtn.style.backgroundColor = wtVisible ? "green" : "red";
+        wtBtn.innerHTML = `WT: ${wtVisible ? "An" : "Aus"}`;
+    });
+    atBtn.addEventListener("click", function () {
         data.at.forEach((item) => {
             const { position, name } = item;
             let blip = "";
@@ -181,8 +160,11 @@ async function loadHtml() {
 
             counter++;
         });
-    }
-    if (dtVisible) {
+        atVisible = !atVisible;
+        atBtn.style.backgroundColor = atVisible ? "green" : "red";
+        atBtn.innerHTML = `AT: ${atVisible ? "An" : "Aus"}`;
+    });
+    dtBtn.addEventListener("click", function () {
         data.dt.forEach((item) => {
             const { position, name } = item;
             let blip = "";
@@ -204,7 +186,10 @@ async function loadHtml() {
 
             counter++;
         });
-    }
+        dtVisible = !dtVisible;
+        dtBtn.style.backgroundColor = dtVisible ? "green" : "red";
+        dtBtn.innerHTML = `DT: ${dtVisible ? "An" : "Aus"}`;
+    });
 
     $('#content').html($('#content').html() + html);
     $(".scalize").scalize();
