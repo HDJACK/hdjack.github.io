@@ -20,40 +20,43 @@ let dtVisible = false;
 
 gangsBtn.addEventListener("click", function () {
     gangsVisible = !gangsVisible;
-    gangsBtn.style.backgroundColor = gangsVisible ? "red" : "green";
+    gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
     gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
 });
 
 squadBtn.addEventListener("click", function () {
     squadVisible = !squadVisible;
-    squadBtn.style.backgroundColor = squadVisible ? "red" : "green";
+    squadBtn.style.backgroundColor = squadVisible ? "green" : "red";
     squadBtn.innerHTML = `Squad: ${squadVisible ? "An" : "Aus"}`;
 });
 
 wtBtn.addEventListener("click", function () {
     wtVisible = !wtVisible;
-    wtBtn.style.backgroundColor = wtVisible ? "red" : "green";
+    wtBtn.style.backgroundColor = wtVisible ? "green" : "red";
     wtBtn.innerHTML = `WT: ${wtVisible ? "An" : "Aus"}`;
 });
 
 atBtn.addEventListener("click", function () {
     atVisible = !atVisible;
-    atBtn.style.backgroundColor = atVisible ? "red" : "green";
+    atBtn.style.backgroundColor = atVisible ? "green" : "red";
     atBtn.innerHTML = `AT: ${atVisible ? "An" : "Aus"}`;
 });
 
 dtBtn.addEventListener("click", function () {
     dtVisible = !dtVisible;
-    dtBtn.style.backgroundColor = dtVisible ? "red" : "green";
+    dtBtn.style.backgroundColor = dtVisible ? "green" : "red";
     dtBtn.innerHTML = `DT: ${dtVisible ? "An" : "Aus"}`;
 });
 
 
 
 $(document).ready(() => {
-    if (gangsVisible) {
+    gangsBtn.addEventListener("click", function () {
+        gangsVisible = !gangsVisible;
+        gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
+        gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
         loadHtml();
-    }
+    });
 
     $("img").click(function (e) {
         let x = e.pageX - e.target.offsetLeft;
