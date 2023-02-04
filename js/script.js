@@ -51,7 +51,14 @@ dtBtn.addEventListener("click", function () {
 
 
 $(document).ready(() => {
-    loadHtml();
+    $("#gangsBtn").click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+            loadHtml();
+        }
+    });
 
     $("img").click(function (e) {
         let x = e.pageX - e.target.offsetLeft;
