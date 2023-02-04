@@ -113,10 +113,6 @@ async function loadHtml() {
                 html += blip + description;
 
                 counter++;
-            } else {
-                blip = " ";
-                description = " ";
-                html += blip + description;
             }
         });
     });
@@ -145,10 +141,6 @@ async function loadHtml() {
                 html += blip + description;
 
                 counter++;
-            } else {
-                blip = " ";
-                description = " ";
-                html += blip + description;
             }
         });
     });
@@ -177,10 +169,6 @@ async function loadHtml() {
                 html += blip + description;
 
                 counter++;
-            } else {
-                blip = " ";
-                description = " ";
-                html += blip + description;
             }
         });
     });
@@ -209,10 +197,6 @@ async function loadHtml() {
                 html += blip + description;
 
                 counter++;
-            } else {
-                blip = " ";
-                description = " ";
-                html += blip + description;
             }
         });
     });
