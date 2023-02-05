@@ -72,8 +72,6 @@ async function loadHtml() {
     const data = await getData();
     gangsBtn.addEventListener("click", function () {
         gangsVisible = !gangsVisible;
-        gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
-        gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
         if (gangsVisible) {
             data.gangs.forEach((gang) => {
                 let blip = "";
@@ -103,7 +101,12 @@ async function loadHtml() {
 
                 counter++;
             });
-        } else { }
+            gangsBtn.style.backgroundColor = "red";
+            gangsBtn.innerHTML = "Gangs: Aus";
+        } else {
+            gangsBtn.style.backgroundColor = "green";
+            gangsBtn.innerHTML = "Gangs: An";
+        }
     });
     data.squads.forEach((squad) => {
         let blip = "";
