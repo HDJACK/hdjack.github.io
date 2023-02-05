@@ -75,7 +75,7 @@ async function loadHtml() {
     let counter = 0;
     let html = "";
     const data = await getData();
-    if (gangsVisible) {
+    if ($('#gangsBtn').prop('checked')) {
         data.gangs.forEach((gang) => {
             let blip = "";
             let description = "";
@@ -105,7 +105,7 @@ async function loadHtml() {
             counter++;
         });
     }
-    if (squadVisible) {
+    if ($('#squadBtn').prop('checked')) {
         data.squads.forEach((squad) => {
             let blip = "";
             let description = "";
@@ -134,7 +134,7 @@ async function loadHtml() {
             counter++;
         });
     }
-    if (wtVisible) {
+    if ($('#wtBtn').prop('checked')) {
         data.wt.forEach((item) => {
             const { position, name } = item;
             let blip = "";
@@ -158,7 +158,7 @@ async function loadHtml() {
             counter++;
         });
     }
-    if (atVisible) {
+    if ($('#atBtn').prop('checked')) {
         data.at.forEach((item) => {
             const { position, name } = item;
             let blip = "";
@@ -181,7 +181,7 @@ async function loadHtml() {
             counter++;
         });
     }
-    if (dtVisible) {
+    if ($('#dtBtn').prop('checked')) {
         data.dt.forEach((item) => {
             const { position, name } = item;
             let blip = "";
