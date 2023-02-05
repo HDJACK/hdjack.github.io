@@ -101,11 +101,13 @@ async function loadHtml() {
 
                 counter++;
             });
-            gangsBtn.style.backgroundColor = "red";
-            gangsBtn.innerHTML = "Gangs: Aus";
-        } else {
             gangsBtn.style.backgroundColor = "green";
             gangsBtn.innerHTML = "Gangs: An";
+            $('#content').html(html);
+        } else {
+            gangsBtn.style.backgroundColor = "red";
+            gangsBtn.innerHTML = "Gangs: Aus";
+            html = "";
         }
     });
     data.squads.forEach((squad) => {
