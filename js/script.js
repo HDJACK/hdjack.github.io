@@ -51,6 +51,7 @@ dtBtn.addEventListener("click", function () {
 
 
 $(document).ready(() => {
+    $(".scalize").scalize();
     loadHtmlAT();
     loadHtmlDT();
     loadHtmlGangs();
@@ -111,7 +112,6 @@ async function loadHtmlGangs() {
             counter++;
         });
         $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
@@ -150,7 +150,6 @@ async function loadHtmlSquads() {
             counter++;
         });
         $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
@@ -184,7 +183,6 @@ async function loadHtmlWT() {
             counter++;
         });
         $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
@@ -217,7 +215,6 @@ async function loadHtmlAT() {
             counter++;
         });
         $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
@@ -251,7 +248,6 @@ async function loadHtmlDT() {
         });
 
         $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
