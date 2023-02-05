@@ -18,11 +18,6 @@ let wtVisible = false;
 let atVisible = false;
 let dtVisible = false;
 
-gangsBtn.addEventListener("click", function () {
-    gangsVisible = !gangsVisible;
-    gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
-    gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
-});
 
 squadBtn.addEventListener("click", function () {
     squadVisible = !squadVisible;
@@ -75,33 +70,40 @@ async function loadHtml() {
     let counter = 0;
     let html = "";
     const data = await getData();
-    data.gangs.forEach((gang) => {
-        let blip = "";
-        let description = "";
-        blip += `<div class="item-point circle" data-top="${gang.position.y}" data-left="${gang.position.x}" style="background: rgb(${gang.blip_color.r},${gang.blip_color.g},${gang.blip_color.b})" data-popover="#gang-${counter}">`;
-        blip += `<div>`;
-        blip += `<a href="#" class="toggle" style="width: 20px; height: 20px;"></a>`;
-        blip += `</div>`;
-        blip += `</div>`;
+    gangsBtn.addEventListener("click", function () {
+        gangsVisible = !gangsVisible;
+        gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
+        gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
+        if (gangsVisible) {
+            data.gangs.forEach((gang) => {
+                let blip = "";
+                let description = "";
+                blip += `<div class="item-point circle" data-top="${gang.position.y}" data-left="${gang.position.x}" style="background: rgb(${gang.blip_color.r},${gang.blip_color.g},${gang.blip_color.b})" data-popover="#gang-${counter}">`;
+                blip += `<div>`;
+                blip += `<a href="#" class="toggle" style="width: 20px; height: 20px;"></a>`;
+                blip += `</div>`;
+                blip += `</div>`;
 
-        description += `<div id="gang-${counter}" class="content right bottom">`;
-        description += `<div class="head">`;
-        description += `<a href="#" class="exit"><img src="assets/close.png" alt="" style="color:"#000" /></a>`;
-        description += `<h6 class="title">${gang.name}</h6>`;
-        description += `</div>`;
-        description += `<div class="body">`;
-        description += `<p><img src="${gang.description.skin}" alt=" "/></p>`;
-        description += `<p>`;
-        gang.description.texts.forEach(text => {
-            description += `<b>${text.title}:</b> ${text.content}<br>`;
-        });
-        description += `</p>`;
-        description += `</div>`;
-        description += `</div>`;
+                description += `<div id="gang-${counter}" class="content right bottom">`;
+                description += `<div class="head">`;
+                description += `<a href="#" class="exit"><img src="assets/close.png" alt="" style="color:"#000" /></a>`;
+                description += `<h6 class="title">${gang.name}</h6>`;
+                description += `</div>`;
+                description += `<div class="body">`;
+                description += `<p><img src="${gang.description.skin}" alt=" "/></p>`;
+                description += `<p>`;
+                gang.description.texts.forEach(text => {
+                    description += `<b>${text.title}:</b> ${text.content}<br>`;
+                });
+                description += `</p>`;
+                description += `</div>`;
+                description += `</div>`;
 
-        html += blip + description;
+                html += blip + description;
 
-        counter++;
+                counter++;
+            });
+        } else { }
     });
     data.squads.forEach((squad) => {
         let blip = "";
