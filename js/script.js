@@ -51,11 +51,7 @@ dtBtn.addEventListener("click", function () {
 
 
 $(document).ready(() => {
-    loadHtmlAT();
-    loadHtmlDT();
-    loadHtmlGangs();
-    loadHtmlSquads();
-    loadHtmlWT();
+    loadHtml();
 
     $("img").click(function (e) {
         let x = e.pageX - e.target.offsetLeft;
@@ -74,14 +70,12 @@ function getData() {
 }
 
 
-
-
 // load Data into View
-async function loadHtmlGangs() {
+async function loadHtml() {
     let counter = 0;
     let html = "";
     const data = await getData();
-    if (gangsVisible) {
+    if ($('#gangsBtn').prop('checked')) {
         data.gangs.forEach((gang) => {
             let blip = "";
             let description = "";
@@ -110,18 +104,10 @@ async function loadHtmlGangs() {
 
             counter++;
         });
-        $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
-}
-
-async function loadHtmlSquads() {
-    let counter = 0;
-    let html = "";
-    const data = await getData();
-    if (squadVisible) {
+    if ($('#squadBtn').prop('checked')) {
         data.squads.forEach((squad) => {
             let blip = "";
             let description = "";
@@ -149,18 +135,10 @@ async function loadHtmlSquads() {
 
             counter++;
         });
-        $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
-}
-
-async function loadHtmlWT() {
-    let counter = 0;
-    let html = "";
-    const data = await getData();
-    if (wtVisible) {
+    if ($('#wtBtn').prop('checked')) {
         data.wt.forEach((item) => {
             const { position, name } = item;
             let blip = "";
@@ -183,18 +161,10 @@ async function loadHtmlWT() {
 
             counter++;
         });
-        $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
-}
-
-async function loadHtmlAT() {
-    let counter = 0;
-    let html = "";
-    const data = await getData();
-    if (atVisible) {
+    if ($('#atBtn').prop('checked')) {
         data.at.forEach((item) => {
             const { position, name } = item;
             let blip = "";
@@ -216,18 +186,10 @@ async function loadHtmlAT() {
 
             counter++;
         });
-        $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
-}
-
-async function loadHtmlDT() {
-    let counter = 0;
-    let html = "";
-    const data = await getData();
-    if (dtVisible) {
+    if ($('#dtBtn').prop('checked')) {
         data.dt.forEach((item) => {
             const { position, name } = item;
             let blip = "";
@@ -249,10 +211,9 @@ async function loadHtmlDT() {
 
             counter++;
         });
-
-        $('#content').html($('#content').html() + html);
-        $(".scalize").scalize();
     } else {
         $('#content').empty();
     }
+    $('#content').html($('#content').html() + html);
+    $(".scalize").scalize();
 }
