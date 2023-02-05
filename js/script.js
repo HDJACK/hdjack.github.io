@@ -50,7 +50,7 @@ dtBtn.addEventListener("click", function () {
 
 
 
-/*$(document).ready(() => {
+$(document).ready(() => {
     loadHtml();
 
     $("img").click(function (e) {
@@ -58,7 +58,7 @@ dtBtn.addEventListener("click", function () {
         let y = e.pageY - e.target.offsetTop;
         console.table({ x, y });
     });
-})*/
+})
 
 // get Data Object from JSON
 function getData() {
