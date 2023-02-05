@@ -18,6 +18,11 @@ let wtVisible = false;
 let atVisible = false;
 let dtVisible = false;
 
+gangsBtn.addEventListener("click", function () {
+    gangsVisible = !gangsVisible;
+    gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
+    gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
+});
 
 squadBtn.addEventListener("click", function () {
     squadVisible = !squadVisible;
@@ -70,9 +75,9 @@ async function loadHtml() {
     let counter = 0;
     let html = "";
     const data = await getData();
-    gangsBtn.addEventListener("click", function () {
-        gangsVisible = !gangsVisible;
-        if (gangsVisible) {
+    //gangsBtn.addEventListener("click", function () {
+        //gangsVisible = !gangsVisible;
+        //if (gangsVisible) {
             data.gangs.forEach((gang) => {
                 let blip = "";
                 let description = "";
@@ -101,16 +106,16 @@ async function loadHtml() {
 
                 counter++;
             });
-            gangsBtn.style.backgroundColor = "green";
-            gangsBtn.innerHTML = "Gangs: An";
-            $('#content').html($('#content').html() + html);
-            $("#content").style.visibility = "show";
-        } else {
+            /*gangsBtn.style.backgroundColor = "green";
+            gangsBtn.innerHTML = "Gangs: An";*/
+            //$('#content').html($('#content').html() + html);
+           // $("#content").style.visibility = "show";
+       /* } else {
             gangsBtn.style.backgroundColor = "red";
             gangsBtn.innerHTML = "Gangs: Aus";
             $("#content").style.visibility = "hidden";
-        }
-    });
+        }*/
+    //});
     data.squads.forEach((squad) => {
         let blip = "";
         let description = "";
