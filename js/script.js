@@ -104,8 +104,6 @@ async function loadHtml() {
 
             counter++;
         });
-    } else {
-        $('#content').empty();
     }
     if ($('#squadBtn').prop('checked')) {
         data.squads.forEach((squad) => {
@@ -135,8 +133,6 @@ async function loadHtml() {
 
             counter++;
         });
-    } else {
-        $('#content').empty();
     }
     if ($('#wtBtn').prop('checked')) {
         data.wt.forEach((item) => {
@@ -161,8 +157,6 @@ async function loadHtml() {
 
             counter++;
         });
-    } else {
-        $('#content').empty();
     }
     if ($('#atBtn').prop('checked')) {
         data.at.forEach((item) => {
@@ -186,8 +180,6 @@ async function loadHtml() {
 
             counter++;
         });
-    } else {
-        $('#content').empty();
     }
     if ($('#dtBtn').prop('checked')) {
         data.dt.forEach((item) => {
@@ -211,8 +203,6 @@ async function loadHtml() {
 
             counter++;
         });
-    } else {
-        $('#content').empty();
     }
     $('#content').html($('#content').html() + html);
     $(".scalize").scalize();
