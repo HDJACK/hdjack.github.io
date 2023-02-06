@@ -22,32 +22,36 @@ gangsBtn.addEventListener("click", function () {
     gangsVisible = !gangsVisible;
     gangsBtn.style.backgroundColor = gangsVisible ? "green" : "red";
     gangsBtn.innerHTML = `Gangs: ${gangsVisible ? "An" : "Aus"}`;
+    toggleButton("gang");
 });
 
 squadBtn.addEventListener("click", function () {
     squadVisible = !squadVisible;
     squadBtn.style.backgroundColor = squadVisible ? "green" : "red";
     squadBtn.innerHTML = `Squad: ${squadVisible ? "An" : "Aus"}`;
+    toggleButton("squad");
 });
 
 wtBtn.addEventListener("click", function () {
     wtVisible = !wtVisible;
     wtBtn.style.backgroundColor = wtVisible ? "green" : "red";
     wtBtn.innerHTML = `WT: ${wtVisible ? "An" : "Aus"}`;
+    toggleButton("wt");
 });
 
 atBtn.addEventListener("click", function () {
     atVisible = !atVisible;
     atBtn.style.backgroundColor = atVisible ? "green" : "red";
     atBtn.innerHTML = `AT: ${atVisible ? "An" : "Aus"}`;
+    toggleButton("at");
 });
 
 dtBtn.addEventListener("click", function () {
     dtVisible = !dtVisible;
     dtBtn.style.backgroundColor = dtVisible ? "green" : "red";
     dtBtn.innerHTML = `DT: ${dtVisible ? "An" : "Aus"}`;
+    toggleButton("dt");
 });
-
 
 
 $(document).ready(() => {
@@ -75,47 +79,34 @@ async function loadHtml() {
     let counter = 0;
     let html = "";
     const data = await getData();
-    //gangsBtn.addEventListener("click", function () {
-        //gangsVisible = !gangsVisible;
-        //if (gangsVisible) {
-            data.gangs.forEach((gang) => {
-                let blip = "";
-                let description = "";
-                blip += `<div class="item-point circle" data-top="${gang.position.y}" data-left="${gang.position.x}" style="background: rgb(${gang.blip_color.r},${gang.blip_color.g},${gang.blip_color.b})" data-popover="#gang-${counter}">`;
-                blip += `<div>`;
-                blip += `<a href="#" class="toggle" style="width: 20px; height: 20px;"></a>`;
-                blip += `</div>`;
-                blip += `</div>`;
+    data.gangs.forEach((gang) => {
+        let blip = "";
+        let description = "";
+        blip += `<div class="item-point circle" data-top="${gang.position.y}" data-left="${gang.position.x}" style="background: rgb(${gang.blip_color.r},${gang.blip_color.g},${gang.blip_color.b})" data-popover="#gang-${counter}">`;
+        blip += `<div>`;
+        blip += `<a href="#" class="toggle" style="width: 20px; height: 20px;"></a>`;
+        blip += `</div>`;
+        blip += `</div>`;
 
-                description += `<div id="gang-${counter}" class="content right bottom">`;
-                description += `<div class="head">`;
-                description += `<a href="#" class="exit"><img src="assets/close.png" alt="" style="color:"#000" /></a>`;
-                description += `<h6 class="title">${gang.name}</h6>`;
-                description += `</div>`;
-                description += `<div class="body">`;
-                description += `<p><img src="${gang.description.skin}" alt=" "/></p>`;
-                description += `<p>`;
-                gang.description.texts.forEach(text => {
-                    description += `<b>${text.title}:</b> ${text.content}<br>`;
-                });
-                description += `</p>`;
-                description += `</div>`;
-                description += `</div>`;
+        description += `<div id="gang-${counter}" class="content right bottom">`;
+        description += `<div class="head">`;
+        description += `<a href="#" class="exit"><img src="assets/close.png" alt="" style="color:"#000" /></a>`;
+        description += `<h6 class="title">${gang.name}</h6>`;
+        description += `</div>`;
+        description += `<div class="body">`;
+        description += `<p><img src="${gang.description.skin}" alt=" "/></p>`;
+        description += `<p>`;
+        gang.description.texts.forEach(text => {
+            description += `<b>${text.title}:</b> ${text.content}<br>`;
+        });
+        description += `</p>`;
+        description += `</div>`;
+        description += `</div>`;
 
-                html += blip + description;
+        html += blip + description;
 
-                counter++;
-            });
-            /*gangsBtn.style.backgroundColor = "green";
-            gangsBtn.innerHTML = "Gangs: An";*/
-            //$('#content').html($('#content').html() + html);
-           // $("#content").style.visibility = "show";
-       /* } else {
-            gangsBtn.style.backgroundColor = "red";
-            gangsBtn.innerHTML = "Gangs: Aus";
-            $("#content").style.visibility = "hidden";
-        }*/
-    //});
+        counter++;
+    });
     data.squads.forEach((squad) => {
         let blip = "";
         let description = "";
@@ -210,4 +201,37 @@ async function loadHtml() {
     });
     $('#content').html($('#content').html() + html);
     $(".scalize").scalize();
+}
+
+async function toggleButton(name) {
+    let boooool;
+    switch (name) {
+        case "gangs":
+            boooool = gangsVisible;
+            break;
+        case "squads":
+            boooool = squadVisible;
+            break;
+        case "wt":
+            boooool = wtVisible;
+            break;
+        case "at":
+            boooool = atVisible;
+            break;
+        case "dt":
+            boooool = dtVisible;
+            break;
+        default:
+            return;
+    }
+
+    if (!boooool) {
+        const data = await getData();
+        data[name].forEach((item) => {
+            $(`#${name}-${item.id}`).remove();
+            $(`.item-point[data-popover="#${name}-${item.id}"]`).remove();
+        });
+    } else {
+        loadHtml();
+    }
 }
