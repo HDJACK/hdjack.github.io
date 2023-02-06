@@ -210,10 +210,10 @@ async function toggleButton(name) {
     const iPoint = `.item-point[data-popover*="${name}"]`;
     const selectedPoint = document.querySelectorAll(iPoint);
     switch (name) {
-        case "gangs":
+        case "gang":
             boooool = gangsVisible;
             break;
-        case "squads":
+        case "squad":
             boooool = squadVisible;
             break;
         case "wt":
