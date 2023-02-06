@@ -233,7 +233,5 @@ async function toggleButton(name) {
         selectedPoint.forEach(selectedPoint => {
             selectedPoint.style.display = window[`${name}Visible`] ? "block" : "none";
         });
-    } else {
-        loadHtml();
     }
 }
