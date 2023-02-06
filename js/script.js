@@ -207,6 +207,8 @@ async function loadHtml() {
 
 async function toggleButton(name) {
     let boooool;
+    const iPoint = `.item-point[data-popover*="${name}"]`;
+    const selectedPoint = document.querySelectorAll(iPoint);
     switch (name) {
         case "gangs":
             boooool = gangsVisible;
@@ -228,10 +230,8 @@ async function toggleButton(name) {
     }
 
     if (!boooool) {
-        const data = await getData();
-        data[name].forEach((item) => {
-            $(`#${name}-${counter}`).remove();
-            $(`[data-popover="#${name}-${counter}"]`).remove();
+        selectedPoint.forEach(selectedPoint => {
+            selectedPoint.style.display = window[`${name}Visible`] ? "block" : "none";
         });
     } else {
         loadHtml();
