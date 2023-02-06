@@ -12,11 +12,11 @@ const wtBtn = document.getElementById("wtBtn");
 const atBtn = document.getElementById("atBtn");
 const dtBtn = document.getElementById("dtBtn");
 
-let gangsVisible = false;
-let squadVisible = false;
-let wtVisible = false;
-let atVisible = false;
-let dtVisible = false;
+let gangsVisible = true;
+let squadVisible = true;
+let wtVisible = true;
+let atVisible = true;
+let dtVisible = true;
 
 gangsBtn.addEventListener("click", function () {
     gangsVisible = !gangsVisible;
