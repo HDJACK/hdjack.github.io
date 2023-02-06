@@ -1,10 +1,12 @@
-/*
-*
-*
-*
-*/
 
 
+
+
+
+//
+//
+//
+//
 
 const gangsBtn = document.getElementById("gangsBtn");
 const squadBtn = document.getElementById("squadBtn");
@@ -74,9 +76,9 @@ function getData() {
 }
 
 
+let counter = 0;
 // load Data into View
 async function loadHtml() {
-    let counter = 0;
     let html = "";
     const data = await getData();
     data.gangs.forEach((gang) => {
@@ -228,8 +230,8 @@ async function toggleButton(name) {
     if (!boooool) {
         const data = await getData();
         data[name].forEach((item) => {
-            $(`#${name}-${item.id}`).remove();
-            $(`.item-point[data-popover="#${name}-${item.id}"]`).remove();
+            $(`#${name}-${counter}`).remove();
+            $(`[data-popover="#${name}-${counter}"]`).remove();
         });
     } else {
         loadHtml();
