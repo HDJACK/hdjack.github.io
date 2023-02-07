@@ -129,7 +129,7 @@
     {
       "name": "Klebrige Banditen",
       "position": {
-        "x": 3300,
+        "x": 3200,
         "y": 5500
       },
       "blip_color": {
@@ -423,8 +423,43 @@
     {
       "name": "San-Chianski-Bergkette (Unten)",
       "position": {
-        "x": 5100,
+        "x": 5000,
         "y": 3000
+      }
+    },
+    {
+      "name": "San-Chianski-Bergkette (Oben)",
+      "position": {
+        "x": 4500,
+        "y": 2300
+      }
+    },
+    {
+      "name": "Pacifik Ocean",
+      "position": {
+        "x": 4880,
+        "y": 1800
+      }
+    },
+    {
+      "name": "Mount Gordo (Unten)",
+      "position": {
+        "x": 4300,
+        "y": 1750
+      }
+    },
+    {
+      "name": "Mount Gordo (Oben)",
+      "position": {
+        "x": 4050,
+        "y": 1350
+      }
+    },
+    {
+      "name": "Mount Gordo (Oben)",
+      "position": {
+        "x": 3550,
+        "y": 1750
       }
     }
   ]
