@@ -209,7 +209,7 @@ async function loadHtml() {
 
         counter++;
     });
-    
+
     data.heli.forEach((item) => {
         const { position, name } = item;
         let blip = "";
@@ -257,7 +257,7 @@ async function toggleButton(name) {
             boooool = dtVisible;
             break;
         case "heli":
-            boooool = dtVisible;
+            boooool = heliVisible;
             break;
         default:
             return;
