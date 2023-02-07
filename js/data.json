@@ -423,36 +423,36 @@
     {
       "name": "San-Chianski-Bergkette (Unten)",
       "position": {
-        "x": 5000,
+        "x": 5150,
         "y": 3000
       }
     },
     {
       "name": "San-Chianski-Bergkette (Oben)",
       "position": {
-        "x": 4500,
-        "y": 2300
+        "x": 4800,
+        "y": 2500
       }
     },
     {
       "name": "Pacifik Ocean",
       "position": {
-        "x": 4880,
-        "y": 1800
+        "x": 5050,
+        "y": 2800
       }
     },
     {
       "name": "Mount Gordo (Unten Rechts)",
       "position": {
-        "x": 4300,
-        "y": 1750
+        "x": 4500,
+        "y": 1650
       }
     },
     {
       "name": "Mount Gordo (Oben)",
       "position": {
-        "x": 4050,
-        "y": 1350
+        "x": 4250,
+        "y": 1150
       }
     },
     {
