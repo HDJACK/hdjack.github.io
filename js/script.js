@@ -262,7 +262,13 @@ async function toggleButton(name) {
         default:
             return;
     }
-    selectedPoint.forEach(selectedPoint => {
-        selectedPoint.style.display = window[`${name}Visible`] ? "block" : "none";
-    });
+    if (!boooool) {
+        selectedPoint.forEach(selectedPoint => {
+            selectedPoint.style.display = "none";
+        });
+    }else{
+        selectedPoint.forEach(selectedPoint => {
+            selectedPoint.style.display = "block";
+        });
+    }
 }
