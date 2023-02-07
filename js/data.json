@@ -112,16 +112,16 @@
         "y": 4000
       },
       "blip_color": {
-        "r": 255,
-        "g": 0,
+        "r": 0,
+        "g": 255,
         "b": 0
       },
       "description": {
-        "skin": "https://cdn.discordapp.com/attachments/1042490938058080286/1049043083188244622/image.png",
+        "skin": "https://cdn.discordapp.com/attachments/1071856028876013628/1072238762161090632/image.png",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Rot"
+            "content": "Grün"
           }
         ]
       }
@@ -236,7 +236,7 @@
       "name": "The Lost MC",
       "position": {
         "x": 3520,
-        "y": 6400
+        "y": 6450
       },
       "blip_color": {
         "r": 139,
