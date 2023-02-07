@@ -437,29 +437,29 @@
     {
       "name": "Pacifik Ocean",
       "position": {
-        "x": 4980,
-        "y": 2150
+        "x": 4900,
+        "y": 2100
       }
     },
     {
       "name": "Mount Gordo (Unten Rechts)",
       "position": {
         "x": 4500,
-        "y": 1850
+        "y": 1730
       }
     },
     {
       "name": "Mount Gordo (Oben)",
       "position": {
         "x": 4250,
-        "y": 1200
+        "y": 1280
       }
     },
     {
       "name": "Mount Gordo (Outlaws / Unten Links)",
       "position": {
         "x": 3600,
-        "y": 1600
+        "y": 1700
       }
     }
   ]
