@@ -437,7 +437,7 @@
     {
       "name": "Pacifik Ocean",
       "position": {
-        "x": 4770,
+        "x": 4790,
         "y": 2050
       }
     },
@@ -459,7 +459,7 @@
       "name": "Mount Gordo (Outlaws / Unten Links)",
       "position": {
         "x": 3600,
-        "y": 1830
+        "y": 1735
       }
     }
   ]
