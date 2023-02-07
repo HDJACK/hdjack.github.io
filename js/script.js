@@ -13,12 +13,14 @@ const squadBtn = document.getElementById("squadBtn");
 const wtBtn = document.getElementById("wtBtn");
 const atBtn = document.getElementById("atBtn");
 const dtBtn = document.getElementById("dtBtn");
+const heliBtn = document.getElementById("heliBtn");
 
 let gangsVisible = true;
 let squadVisible = true;
 let wtVisible = true;
 let atVisible = true;
 let dtVisible = true;
+let heliVisible = true;
 
 gangsBtn.addEventListener("click", function () {
     gangsVisible = !gangsVisible;
@@ -53,6 +55,13 @@ dtBtn.addEventListener("click", function () {
     dtBtn.style.backgroundColor = dtVisible ? "green" : "red";
     dtBtn.innerHTML = `DT: ${dtVisible ? "An" : "Aus"}`;
     toggleButton("dt");
+});
+
+heliBtn.addEventListener("click", function () {
+    heliVisible = !heliVisible;
+    heliBtn.style.backgroundColor = heliVisible ? "green" : "red";
+    heliBtn.innerHTML = `A. Helikopter: ${heliVisible ? "An" : "Aus"}`;
+    toggleButton("heli");
 });
 
 
@@ -156,7 +165,6 @@ async function loadHtml() {
 
         html += blip + description;
 
-
         counter++;
     });
     data.at.forEach((item) => {
@@ -201,6 +209,29 @@ async function loadHtml() {
 
         counter++;
     });
+    
+    data.heli.forEach((item) => {
+        const { position, name } = item;
+        let blip = "";
+        let description = "";
+        blip += `<div class="item-point circle" data-top="${position.y}" data-left="${position.x}" style="background-image: url('assets/Heli.webp'); background-size: cover; background-color: rgba(0,0,0,0); border: 0;" data-popover="#heli-${counter}">`;
+        blip += `<div>`;
+        blip += `<a href="#" class="toggle" style="width: 20px; height: 20px;"></a>`;
+        blip += `</div>`;
+        blip += `</div>`;
+
+        description += `<div id="heli-${counter}" class="content right bottom">`;
+        description += `<div class="head">`;
+        description += `<a href="#" class="exit"><img src="assets/close.png" alt="" style="color:"#000" /></a>`;
+        description += `<h6 class="title">Abgestürzter Helikopter: ${name}</h6>`;
+        description += `</div>`;
+        description += `</div>`;
+
+        html += blip + description;
+
+        counter++;
+    });
+
     $('#content').html($('#content').html() + html);
     $(".scalize").scalize();
 }
@@ -223,6 +254,9 @@ async function toggleButton(name) {
             boooool = atVisible;
             break;
         case "dt":
+            boooool = dtVisible;
+            break;
+        case "heli":
             boooool = dtVisible;
             break;
         default:

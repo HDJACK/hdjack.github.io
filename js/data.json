@@ -418,5 +418,14 @@
         "y": 3900
       }
     }
+  ],
+  "heli": [
+    {
+      "name": "San-Chianski-Bergkette (Unten)",
+      "position": {
+        "x": 4950,
+        "y": 2980
+      }
+    }
   ]
 }
