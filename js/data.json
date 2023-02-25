@@ -49,16 +49,16 @@
         "y": 4650
       },
       "blip_color": {
-        "r": 16,
-        "g": 78,
-        "b": 139
+        "r": 105,
+        "g": 105,
+        "b": 105
       },
       "description": {
         "skin": "https://cdn.discordapp.com/attachments/1007758669473124378/1076871417376800849/Grand_Theft_Auto_V_Screenshot_2023.02.19_-_15.12.42.29_2.png",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Blau"
+            "content": "Grau"
           }
         ]
       }
