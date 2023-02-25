@@ -22,10 +22,31 @@
       }
     },
     {
-      "name": "Kegelclub (Alt Marlowe)",
+      "name": "Marlowe",
       "position": {
         "x": 1250,
         "y": 4050
+      },
+      "blip_color": {
+        "r": 157,
+        "g": 157,
+        "b": 1
+      },
+      "description": {
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Platzhalter"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kegelclub",
+      "position": {
+        "x": 3500,
+        "y": 4650
       },
       "blip_color": {
         "r": 16,
@@ -33,7 +54,7 @@
         "b": 139
       },
       "description": {
-        "skin": "https://cdn.discordapp.com/attachments/1007769883729203292/1070989344590016544/Desktop_Screenshot_2023.02.03_-_09.48.29.99_2.png",
+        "skin": "https://cdn.discordapp.com/attachments/1007758669473124378/1076871417376800849/Grand_Theft_Auto_V_Screenshot_2023.02.19_-_15.12.42.29_2.png",
         "texts": [
           {
             "title": "Farbe",
@@ -113,15 +134,15 @@
       },
       "blip_color": {
         "r": 0,
-        "g": 255,
+        "g": 0,
         "b": 0
       },
       "description": {
-        "skin": "https://cdn.discordapp.com/attachments/1071856028876013628/1072238762161090632/image.png",
+        "skin": "https://cdn.discordapp.com/attachments/1010217754172850217/1079017755149348994/skin02.PNG",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Grün"
+            "content": "Schwarz"
           }
         ]
       }
@@ -169,22 +190,22 @@
       }
     },
     {
-      "name": "Helm GmbH",
+      "name": "Grove St.",
       "position": {
         "x": 2680,
         "y": 6770
       },
       "blip_color": {
-        "r": 0,
-        "g": 0,
-        "b": 0
+        "r": 157,
+        "g": 157,
+        "b": 1
       },
       "description": {
-        "skin": "https://i.ibb.co/DL62LV8/Screenshot-679.png",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Schwarz"
+            "content": "Platzhalter"
           }
         ]
       }
