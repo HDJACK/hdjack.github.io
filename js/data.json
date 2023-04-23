@@ -22,22 +22,22 @@
       }
     },
     {
-      "name": "Marlowe",
+      "name": "La Cosa Nostra",
       "position": {
         "x": 1250,
         "y": 4050
       },
       "blip_color": {
-        "r": 157,
-        "g": 157,
-        "b": 1
+        "r": 115,
+        "g": 115,
+        "b": 115
       },
       "description": {
-        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
+        "skin": "https://gyazo.com/93d78f26d30540c78a152045513cf722",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Platzhalter"
+            "content": "Grau"
           }
         ]
       }
@@ -49,16 +49,16 @@
         "y": 4200
       },
       "blip_color": {
-        "r": 105,
-        "g": 105,
-        "b": 105
+        "r": 255,
+        "g": 255,
+        "b": 255
       },
       "description": {
-        "skin": "https://cdn.discordapp.com/attachments/1007758669473124378/1076871417376800849/Grand_Theft_Auto_V_Screenshot_2023.02.19_-_15.12.42.29_2.png",
+        "skin": "https://cdn.discordapp.com/attachments/1007758669473124378/1094612615176650792/Grand_Theft_Auto_V_Screenshot_2023.04.09_-_15.17.59.48_2.png",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Grau"
+            "content": "Weiß"
           }
         ]
       }
