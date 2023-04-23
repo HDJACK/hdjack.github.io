@@ -255,6 +255,26 @@
   ],
   "squads": [
     {
+      "name": "#Gang: 300",
+      "position": {
+        "x": 1750,
+        "y": 5200
+      },
+      "blip_color": {
+        "r": 0,
+        "g": 109,
+        "b": 0
+      },
+      "description": {
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Schwarz Grün"
+          }
+        ]
+      }
+    },
+    {
       "name": "Platzhalter",
       "position": {
         "x": 3905,
