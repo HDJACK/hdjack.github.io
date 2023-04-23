@@ -1,22 +1,22 @@
 {
   "gangs": [
     {
-      "name": "MS13", 
+      "name": "Alte Vagos / Tijan Base", 
       "position": {
         "x": 1300,
         "y": 5150
       },
       "blip_color": {
-        "r": 255,
-        "g": 255,
-        "b": 255
+        "r": 157,
+        "g": 145,
+        "b": 1
       },
       "description": {
-        "skin": "https://i.imgur.com/3h4PRth.png",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Weiß"
+            "content": "Platzhalter"
           }
         ]
       }
@@ -45,8 +45,8 @@
     {
       "name": "Kegelclub",
       "position": {
-        "x": 3500,
-        "y": 4650
+        "x": 2600,
+        "y": 4200
       },
       "blip_color": {
         "r": 105,
@@ -59,6 +59,27 @@
           {
             "title": "Farbe",
             "content": "Grau"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Platzhalter",
+      "position": {
+        "x": 3500,
+        "y": 4650
+      },
+      "blip_color": {
+        "r": 157,
+        "g": 157,
+        "b": 1
+      },
+      "description": {
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
+        "texts": [
+          {
+            "title": "Farbe",
+            "content": "Platzhalter"
           }
         ]
       }
@@ -148,22 +169,22 @@
       }
     },
     {
-      "name": "Klebrige Banditen",
+      "name": "Casino",
       "position": {
         "x": 3200,
         "y": 5500
       },
       "blip_color": {
-        "r": 255,
-        "g": 0,
-        "b": 0
+        "r": 157,
+        "g": 145,
+        "b": 1
       },
       "description": {
-        "skin": "https://i.imgur.com/ac8aJRx.jpeg",
+        "skin": "https://cdn-icons-png.flaticon.com/512/57/57108.png",
         "texts": [
           {
             "title": "Farbe",
-            "content": "Rot"
+            "content": "Platzhalter"
           }
         ]
       }
@@ -234,61 +255,61 @@
   ],
   "squads": [
     {
-      "name": "Die Heiligen",
+      "name": "Platzhalter",
       "position": {
         "x": 3905,
         "y": 3910
       },
       "blip_color": {
-        "r": 122,
-        "g": 55,
-        "b": 139
+        "r": 157,
+        "g": 145,
+        "b": 1
       },
       "description": {
         "texts": [
           {
             "title": "Farbe",
-            "content": "Lila"
+            "content": "Platzhalter"
           }
         ]
       }
     },
     {
-      "name": "The Lost MC",
+      "name": "Platzhalter",
       "position": {
         "x": 3520,
         "y": 6450
       },
       "blip_color": {
-        "r": 139,
-        "g": 90,
-        "b": 43
+        "r": 157,
+        "g": 145,
+        "b": 1
       },
       "description": {
         "texts": [
           {
             "title": "Farbe",
-            "content": "Braun"
+            "content": "Platzhalter"
           }
         ]
       }
     },
     {
-      "name": "Prinzip",
+      "name": "Platzhalter",
       "position": {
         "x": 2865,
         "y": 3720
       },
       "blip_color": {
-        "r": 16,
-        "g": 78,
-        "b": 139
+        "r": 157,
+        "g": 145,
+        "b": 1
       },
       "description": {
         "texts": [
           {
             "title": "Farbe",
-            "content": "Blau"
+            "content": "Platzhalter"
           }
         ]
       }
